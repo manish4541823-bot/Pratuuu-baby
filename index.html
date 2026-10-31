@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff0f6">
+<title>Chhota Sa Cute Corner 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkle-layer" aria-hidden="true"></div>
+<main class="app">
+  <header class="topbar">
+    <div class="brand">🌷 little happy place</div>
+    <div class="tiny-pill">made with 💗</div>
+  </header>
+
+  <section class="screen active" id="home">
+    <div class="hero-copy">
+      <span class="eyebrow">a tiny corner just for you</span>
+      <h1>Hey, <span class="gradient">Sunshine!</span> 🌸</h1>
+      <p>Thodi si cuteness, thodi si masti,<br>aur dher saari happy vibes ✨</p>
+    </div>
+    <div class="photo-frame">
+      <span class="sticker sticker-one">♡</span>
+      <img src="assets/our-photo.jpeg" alt="A special photo" class="couple-photo">
+      <span class="sticker sticker-two">🌼</span>
+      <span class="photo-caption">my favourite memory 📸</span>
+    </div>
+    <div class="home-actions">
+      <button class="btn primary" data-go="gifts">🎁 Open a little gift</button>
+      <button class="btn secondary" data-go="game">🕹️ Cute mini game</button>
+      <button class="btn soft" data-go="note">💌 Secret note</button>
+    </div>
+    <div class="footer-note">tap around • smile a little • repeat ♡</div>
+  </section>
+
+  <section class="screen" id="gifts">
+    <button class="back" data-go="home">← Home</button>
+    <div class="section-title"><span>🎀</span><h2>Pick your surprise!</h2><p>Ek box choose karo… no cheating 😌</p></div>
+    <div class="gift-grid">
+      <button class="gift-card" data-gift="flower"><span class="gift-emoji">🌷</span><b>Gift 01</b><small>soft & sweet</small></button>
+      <button class="gift-card" data-gift="joke"><span class="gift-emoji">🐣</span><b>Gift 02</b><small>tiny giggle</small></button>
+      <button class="gift-card" data-gift="wish"><span class="gift-emoji">💖</span><b>Gift 03</b><small>good vibes</small></button>
+    </div>
+    <div class="gift-result" id="giftResult" aria-live="polite">
+      <div class="result-icon">🎁</div><h3>Your surprise is waiting!</h3><p>Upar se koi ek cute box kholo 💝</p>
+    </div>
+    <button class="btn secondary bottom-action" data-go="game">Next: play a game 🕹️</button>
+  </section>
+
+  <section class="screen" id="game">
+    <button class="back" data-go="home">← Home</button>
+    <div class="section-title"><span>🧸</span><h2>Catch the hearts!</h2><p>10 seconds mein jitne hearts tap kar sako 💕</p></div>
+    <div class="score-row"><span>Score <b id="score">0</b></span><span>Time <b id="time">10</b>s</span></div>
+    <div class="game-board" id="gameBoard">
+      <div class="game-hint" id="gameHint">Press start and catch 💗</div>
+    </div>
+    <div class="game-actions"><button class="btn primary" id="startGame">▶ Start game</button><button class="btn soft" id="resetGame">↻ Reset</button></div>
+    <div class="game-message" id="gameMessage">Ready? Set… cute! 🌸</div>
+  </section>
+
+  <section class="screen" id="note">
+    <button class="back" data-go="home">← Home</button>
+    <div class="letter">
+      <div class="letter-top">✉️ a little note for you</div>
+      <div class="letter-flower">🌸</div>
+      <h2>Dear Sunshine,</h2>
+      <p>Bas yaad dilana tha ki tumhari smile ekdum priceless hai. Apna khayal rakhna, paani peena, aur chhoti-chhoti cheezon mein khushi dhoondhna. 💗</p>
+      <p class="note-sign">— someone sending you good vibes ✨</p>
+      <button class="btn primary" id="moreLove">One more cute line 💌</button>
+      <p class="extra-line" id="extraLine">Tumhari vibe = full-on sunshine energy ☀️</p>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
